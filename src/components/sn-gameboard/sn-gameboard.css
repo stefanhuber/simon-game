@@ -1,0 +1,48 @@
+.gameboard {
+    display:flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+}
+.gamepad {
+    border: 1px solid black;
+    border-radius: 15px;
+    flex-basis: 40%;
+    padding:20% 0;
+    margin:5%;
+}
+.gamepad:focus, .gamepad:active {
+    outline: none;
+}
+.gamepad:active {
+    opacity: 0.4;
+}
+.gamepad-1 {
+    background:yellow;
+}
+.gamepad-2 {
+    background: red;
+}
+.gamepad-3 {
+    background: green;
+}
+.gamepad-4 {
+    background: blue;
+}
+
+.blink {
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0.4;
+    }
+    50% {
+        opacity:1;
+    }
+}
