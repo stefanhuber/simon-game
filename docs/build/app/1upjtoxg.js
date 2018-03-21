@@ -1,0 +1,2 @@
+/*! Built with http://stenciljs.com */
+const{h:t}=window.App;class e{render(){return t("div",null,t("header",null,t("h1",null,"Game Over")),t("main",null,t("h2",null,"Great you did ",this.match.params.count," correct steps."),t("div",{class:"menu-item"},t("stencil-route-link",{url:"/game"},t("button",null,"Try again"))),t("div",{class:"menu-item"},t("stencil-route-link",{url:"/"},t("button",null,"Back to menu")))))}static get is(){return"sn-gameover"}static get properties(){return{match:{type:"Any",attr:"match"}}}}export{e as SnGameover};

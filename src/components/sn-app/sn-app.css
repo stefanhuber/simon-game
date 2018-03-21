@@ -13,4 +13,29 @@ h1 {
     color: #fff;
     padding: 0 12px;
 }
+h2 {
+    text-align: center;
+}
+
+main {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    min-height:60vh;
+}
+
+.menu-item {
+    margin:10px;
+    text-align: center;
+}
+
+button {
+    border-radius: 5px;
+    background:#888;
+    color:white;
+    border:none;
+    padding:10px;
+    font-size: 20px;
+}
   

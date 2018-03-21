@@ -1,10 +1,12 @@
 .gameboard {
     display:flex;
-    flex-wrap: wrap;
-    max-width: 400px;
+    flex-wrap: wrap;    
+    max-width: 500px;
+    min-width: 300px;
+    width:60vw;
 }
 .gamepad {
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 15px;
     flex-basis: 40%;
     padding:20% 0;

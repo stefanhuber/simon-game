@@ -1,7 +1,13 @@
 exports.config = {
+  outputTargets: [
+    {
+      type: 'www' ,
+      dir: 'docs'
+    }
+  ]
 };
 
 exports.devServer = {
-  root: 'www',
+  root: 'docs',
   watchGlob: '**/**'
 };

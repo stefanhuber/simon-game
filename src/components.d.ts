@@ -3,16 +3,29 @@
  * It contains typing information for all components that exist in this project
  * and imports for stencil collections that might be configured in your stencil.config.js file
  */
-
-
 declare global {
+  namespace JSX {
+    interface Element {}
+    export interface IntrinsicElements {}
+  }
+  namespace JSXElements {}
+
   interface HTMLStencilElement extends HTMLElement {
     componentOnReady(): Promise<this>;
     componentOnReady(done: (ele?: this) => void): void;
+
+    forceUpdate(): void;
   }
+
+  interface HTMLAttributes {}
 }
 
+import '@stencil/router';
 
+import {
+  MatchResults,
+  RouterHistory,
+} from '@stencil/router';
 
 import {
   SnApp as SnApp
@@ -38,6 +51,7 @@ declare global {
   }
   namespace JSXElements {
     export interface SnAppAttributes extends HTMLAttributes {
+      
       
     }
   }
@@ -68,6 +82,7 @@ declare global {
   }
   namespace JSXElements {
     export interface SnGameAttributes extends HTMLAttributes {
+      history?: RouterHistory;
       
     }
   }
@@ -99,6 +114,69 @@ declare global {
   namespace JSXElements {
     export interface SnGameboardAttributes extends HTMLAttributes {
       animationPattern?: number[];
+      onGamepadTouched?: (event: CustomEvent) => void;
+    }
+  }
+}
+
+
+import {
+  SnGameover as SnGameover
+} from './components/sn-gameover/sn-gameover';
+
+declare global {
+  interface HTMLSnGameoverElement extends SnGameover, HTMLStencilElement {
+  }
+  var HTMLSnGameoverElement: {
+    prototype: HTMLSnGameoverElement;
+    new (): HTMLSnGameoverElement;
+  };
+  interface HTMLElementTagNameMap {
+    "sn-gameover": HTMLSnGameoverElement;
+  }
+  interface ElementTagNameMap {
+    "sn-gameover": HTMLSnGameoverElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "sn-gameover": JSXElements.SnGameoverAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface SnGameoverAttributes extends HTMLAttributes {
+      match?: MatchResults;
+      
+    }
+  }
+}
+
+
+import {
+  SimonMenu as SnMenu
+} from './components/sn-menu/sn-menu';
+
+declare global {
+  interface HTMLSnMenuElement extends SnMenu, HTMLStencilElement {
+  }
+  var HTMLSnMenuElement: {
+    prototype: HTMLSnMenuElement;
+    new (): HTMLSnMenuElement;
+  };
+  interface HTMLElementTagNameMap {
+    "sn-menu": HTMLSnMenuElement;
+  }
+  interface ElementTagNameMap {
+    "sn-menu": HTMLSnMenuElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "sn-menu": JSXElements.SnMenuAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface SnMenuAttributes extends HTMLAttributes {
+      
+      
     }
   }
 }

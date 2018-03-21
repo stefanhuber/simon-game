@@ -1,0 +1,34 @@
+{
+  "namespace": "App",
+  "fsNamespace": "app",
+  "loader": "../app.js",
+  "global": "app.global.js",
+  "core": "app.m9hna5wq.js",
+  "corePolyfilled": "app.yxrpbav4.js",
+  "components": {
+    "sn-app": {
+      "$": "uvwf6qvo"
+    },
+    "sn-game": {
+      "$": "yigntril"
+    },
+    "sn-gameboard": {
+      "$": "yigntril"
+    },
+    "sn-gameover": {
+      "$": "1upjtoxg"
+    },
+    "sn-menu": {
+      "$": "epmpr0ju"
+    },
+    "stencil-route": {
+      "$": "uvwf6qvo"
+    },
+    "stencil-route-link": {
+      "$": "d24cxzbj"
+    },
+    "stencil-router": {
+      "$": "uvwf6qvo"
+    }
+  }
+}

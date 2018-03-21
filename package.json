@@ -1,7 +1,7 @@
 {
   "name": "simon-game",
   "private": true,
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Simon Game",
   "files": [
     "dist/"
@@ -15,7 +15,7 @@
     "test.watch": "jest --watch --no-cache"
   },
   "dependencies": {
-    "@stencil/core": "^0.6.18",
+    "@stencil/core": "^0.7.5",
     "@stencil/router": "latest"
   },
   "devDependencies": {
@@ -26,14 +26,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ionic-team/stencil-app-starter.git"
+    "url": "git+https://github.com/stefanhuber/simon-game.git"
   },
-  "author": "Ionic Team",
-  "license": "MIT",
+  "author": "Stefan Huber",
+  "license": "BSD-2",
   "bugs": {
-    "url": "https://github.com/ionic-team/stencil"
+    "url": "https://github.com/stefanhuber/simon-game"
   },
-  "homepage": "https://github.com/ionic-team/stencil",
+  "homepage": "https://github.com/stefanhuber/simon-game",
   "jest": {
     "transform": {
       "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"
