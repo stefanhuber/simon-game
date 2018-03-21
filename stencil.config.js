@@ -2,7 +2,8 @@ exports.config = {
   outputTargets: [
     {
       type: 'www' ,
-      dir: 'docs'
+      dir: 'docs' ,
+      baseUrl : '/simon-game'
     }
   ]
 };
