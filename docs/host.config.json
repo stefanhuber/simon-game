@@ -1,0 +1,37 @@
+{
+  "hosting": {
+    "rules": [
+      {
+        "include": "/simon-game/",
+        "headers": [
+          {
+            "name": "Link",
+            "value": "</simon-game/build/app/app.yxrpbav4.js>;rel=preload;as=script"
+          },
+          {
+            "name": "Link",
+            "value": "</simon-game/build/app/uvwf6qvo.js>;rel=preload;as=script"
+          }
+        ]
+      },
+      {
+        "include": "/simon-game/build/app/**",
+        "headers": [
+          {
+            "name": "Cache-Control",
+            "value": "public, max-age=31536000"
+          }
+        ]
+      },
+      {
+        "include": "/simon-game/sw.js",
+        "headers": [
+          {
+            "name": "Cache-Control",
+            "value": "no-cache, no-store, must-revalidate"
+          }
+        ]
+      }
+    ]
+  }
+}
