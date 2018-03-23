@@ -21,7 +21,7 @@ export class SimonMenu {
           </div>
 
           <div class="menu-item">  
-              <stencil-route-link url="">
+              <stencil-route-link url="/highscore">
                   <button>Highscores</button>
               </stencil-route-link>
           </div>

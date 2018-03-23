@@ -3,32 +3,35 @@
   "fsNamespace": "app",
   "loader": "../app.js",
   "global": "app.global.js",
-  "core": "app.m9hna5wq.js",
-  "corePolyfilled": "app.yxrpbav4.js",
+  "core": "app.core.js",
+  "corePolyfilled": "es5-build-disabled.js",
   "components": {
     "sn-app": {
-      "$": "uvwf6qvo"
+      "$": "sn-app"
     },
     "sn-game": {
-      "$": "yigntril"
+      "$": "sn-game"
     },
     "sn-gameboard": {
-      "$": "yigntril"
+      "$": "sn-game"
     },
     "sn-gameover": {
-      "$": "1upjtoxg"
+      "$": "sn-gameover"
+    },
+    "sn-highscore": {
+      "$": "sn-highscore"
     },
     "sn-menu": {
-      "$": "epmpr0ju"
+      "$": "sn-menu"
     },
     "stencil-route": {
-      "$": "uvwf6qvo"
+      "$": "sn-app"
     },
     "stencil-route-link": {
-      "$": "d24cxzbj"
+      "$": "stencil-route-link"
     },
     "stencil-router": {
-      "$": "uvwf6qvo"
+      "$": "sn-app"
     }
   }
 }

@@ -15,7 +15,9 @@ export class SnApp {
         <stencil-route url='/game' component='sn-game'>
         </stencil-route> 
         <stencil-route url='/gameover/:count' component='sn-gameover'>
-        </stencil-route>         
+        </stencil-route>      
+        <stencil-route url='/highscore' component='sn-highscore'>
+        </stencil-route>   
       </stencil-router>
     );
   }

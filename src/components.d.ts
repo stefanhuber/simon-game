@@ -152,6 +152,37 @@ declare global {
 
 
 import {
+  SnHighscore as SnHighscore
+} from './components/sn-highscore/sn-highscore';
+
+declare global {
+  interface HTMLSnHighscoreElement extends SnHighscore, HTMLStencilElement {
+  }
+  var HTMLSnHighscoreElement: {
+    prototype: HTMLSnHighscoreElement;
+    new (): HTMLSnHighscoreElement;
+  };
+  interface HTMLElementTagNameMap {
+    "sn-highscore": HTMLSnHighscoreElement;
+  }
+  interface ElementTagNameMap {
+    "sn-highscore": HTMLSnHighscoreElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "sn-highscore": JSXElements.SnHighscoreAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface SnHighscoreAttributes extends HTMLAttributes {
+      
+      
+    }
+  }
+}
+
+
+import {
   SimonMenu as SnMenu
 } from './components/sn-menu/sn-menu';
 
