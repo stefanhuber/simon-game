@@ -12,7 +12,8 @@ export const config: Config = {
       dir: 'docs',
       serviceWorker: {
         globPatterns: [
-          '**/*.{js,css,json,html,ico,png,family=Orbitron}'
+          '**/*.{js,css,json,html,ico,png}',
+          'https://fonts.googleapis.com/css?family=Orbitron'
         ]
       }
     }
