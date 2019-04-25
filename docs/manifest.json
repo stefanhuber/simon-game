@@ -1,8 +1,10 @@
 {
   "name": "Simon Game",
-  "short_name": "Simon",
-  "start_url": "/",
+  "short_name": "Simon Game",
+  "start_url": "/simon-game/index.html",
+  "description": "Train your memory with Simon Game",
   "display": "standalone",
+  "orientation": "portrait",
   "icons": [{
     "src": "assets/icon/icon.png",
     "sizes": "512x512",

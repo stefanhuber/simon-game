@@ -10,7 +10,11 @@ export const config: Config = {
       type: 'www',
       baseUrl: '/simon-game',
       dir: 'docs',
-      // serviceWorker: null
+      serviceWorker: {
+        globPatterns: [
+          '**/*.{js,css,json,html,ico,png,family=Orbitron}'
+        ]
+      }
     }
   ]
 };
