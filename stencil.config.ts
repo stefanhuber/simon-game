@@ -10,13 +10,7 @@ export const config: Config = {
       type: 'www',
       baseUrl: '/simon-game',
       dir: 'docs',
-      serviceWorker: {
-        skipWaiting: true,
-        clientsClaim: true,
-        globPatterns: [
-          '**/*.{html,js,css,json,ico,png}'
-        ]
-      }
+      serviceWorker: null
     }
   ]
 };
