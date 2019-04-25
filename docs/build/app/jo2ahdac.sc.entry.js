@@ -1,0 +1,1 @@
+const e=window.App.h;class n{render(){return e("main",null,e("h1",null,"Simon Game"),e("div",{class:"menu-item"},e("stencil-route-link",{url:"/game"},"Start game")),e("div",{class:"menu-item"},e("stencil-route-link",{url:"/highscore"},"Highscores")))}static get is(){return"sn-menu"}static get style(){return""}}export{n as SnMenu};

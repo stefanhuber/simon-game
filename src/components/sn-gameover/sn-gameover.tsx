@@ -16,29 +16,16 @@ export class SnGameover {
 
     render() {        
         return (
-            <div>
-                <header>
-                    <h1>Game Over</h1>
-                </header>
-    
-                <main>
-    
-                    <h2>Great you did { this.match.params.count } correct steps.</h2>
-    
-                    <div class="menu-item">
-                        <stencil-route-link url={'/game'}>
-                            <button>Try again</button>
-                        </stencil-route-link>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <stencil-route-link url="/">
-                            <button>Back to menu</button>
-                        </stencil-route-link>
-                    </div>
-    
-                </main>
-            </div>
+            <main>
+                <h1>Game Over</h1>
+                <h3>Great you did { this.match.params.count } correct steps.</h3>
+                <div class="menu-item">
+                    <stencil-route-link url={'/game'}>Try again</stencil-route-link>
+                </div>                
+                <div class="menu-item">
+                    <stencil-route-link url="/">Back to menu</stencil-route-link>
+                </div>
+            </main>            
         );
     }  
 

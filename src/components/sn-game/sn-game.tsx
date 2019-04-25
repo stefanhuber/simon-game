@@ -44,15 +44,9 @@ export class SnGame {
 
     render() {
       return (
-        <div>
-          <header>
-            <h1>Simon Game</h1>
-          </header>
-
-          <main>
-            <sn-gameboard animationPattern={ this.animationPattern }></sn-gameboard>
-          </main>
-        </div>
+        <main>
+          <sn-gameboard animationPattern={ this.animationPattern }></sn-gameboard>
+        </main>
       );
     }
 }

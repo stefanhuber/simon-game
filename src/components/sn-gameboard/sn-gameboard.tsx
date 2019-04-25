@@ -5,13 +5,21 @@ import { Component, Prop, State, Listen, Event, EventEmitter, Watch } from '@ste
     styleUrl : 'sn-gameboard.css'
 })
 export class SnGameboard {
+    
+    get heading() {
+        return this.isPlaying ? "Memorize the pattern" : "Replay the pattern";
+    }
 
-    @Prop()
-    animationPattern:number[];
+    get isPlaying() {
+        return this.step < this.animationPattern.length;
+    }
 
     @State()
     step:number = 0;
 
+    @Prop()
+    animationPattern:number[];
+    
     @Watch('animationPattern')
     animationPatternChanged() {
         this.step = 0;
@@ -25,16 +33,9 @@ export class SnGameboard {
         this.step += 1;
     }
 
-    get heading() {
-        return this.isPlaying ? "Memorize the pattern" : "Replay the pattern";
-    }
-
-    get isPlaying() {
-        return this.step < this.animationPattern.length;
-    }
-
     render() {
         let gamepads = [];
+
         for (let i = 1; i <= 4; i++) {
             let classes = {};
             classes['gamepad'] = true;
@@ -48,14 +49,11 @@ export class SnGameboard {
             }          
         }
 
-        return (
-            <section>
-                <h2>{ this.heading }</h2>
-                <div class="gameboard">
-                    { gamepads }
-                </div>
-            </section>
-        );
-    }
-    
+        return [
+            <h2>{ this.heading }</h2>,
+            <div class="gameboard">
+                { gamepads }
+            </div>
+        ];
+    }    
 }

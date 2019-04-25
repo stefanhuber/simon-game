@@ -24,8 +24,8 @@ export class Highscore {
             }
         });
 
-        if (highscore.length > 3) {
-            highscore.length = 3;
+        if (highscore.length > 5) {
+            highscore.length = 5;
         }
 
         localStorage.setItem('highscore', JSON.stringify(highscore));

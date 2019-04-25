@@ -1,16 +1,15 @@
 .gameboard {
-    display:flex;
-    flex-wrap: wrap;    
-    max-width: 500px;
-    min-width: 300px;
-    width:60vw;
+    display:grid;  
+    width: 100vw;
+    height: 80vw;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: auto;
+    grid-gap:10px 10px;
+    justify-content: center;
 }
 .gamepad {
-    border: 2px solid black;
-    border-radius: 15px;
-    flex-basis: 40%;
-    padding:20% 0;
-    margin:5%;
+    border-radius: 20%;    
+    border:0;
 }
 .gamepad:focus, .gamepad:active {
     outline: none;
@@ -19,15 +18,19 @@
     opacity: 0.4;
 }
 .gamepad-1 {
+    border-top-left-radius: 75%;
     background:yellow;
 }
 .gamepad-2 {
+    border-top-right-radius: 75%;
     background: red;
 }
 .gamepad-3 {
+    border-bottom-left-radius: 75%;
     background: green;
 }
 .gamepad-4 {
+    border-bottom-right-radius: 75%;
     background: blue;
 }
 

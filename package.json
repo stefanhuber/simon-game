@@ -2,49 +2,19 @@
   "name": "simon-game",
   "private": true,
   "version": "1.0.0",
-  "description": "Simon Game",
-  "files": [
-    "dist/"
-  ],
+  "description": "Simon Game PWA",
   "scripts": {
     "build": "stencil build",
-    "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
-    "serve": "stencil-dev-server",
-    "start": "npm run dev",
-    "test": "jest --no-cache",
-    "test.watch": "jest --watch --no-cache"
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll"
   },
   "dependencies": {
-    "@stencil/core": "^0.7.5",
-    "@stencil/router": "latest"
+    "@stencil/core": "0.18.1-0",
+    "@stencil/router": "^0.3.3"
   },
+  "license": "MIT",
   "devDependencies": {
-    "@stencil/dev-server": "latest",
-    "@stencil/utils": "latest",
-    "@types/jest": "^21.1.1",
-    "jest": "^21.2.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/stefanhuber/simon-game.git"
-  },
-  "author": "Stefan Huber",
-  "license": "BSD-2",
-  "bugs": {
-    "url": "https://github.com/stefanhuber/simon-game"
-  },
-  "homepage": "https://github.com/stefanhuber/simon-game",
-  "jest": {
-    "transform": {
-      "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"
-    },
-    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(tsx?|jsx?)$",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "json",
-      "jsx"
-    ]
+    "workbox-build": "3.4.1"
   }
 }

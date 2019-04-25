@@ -1,0 +1,1 @@
+class e{static getHighscore(){return JSON.parse(localStorage.getItem("highscore"))}static addHighscore(e){let t=JSON.parse(localStorage.getItem("highscore"));t||(t=[]);let s=new Date;t.push({score:e,date:s.getTime()}),t.sort((e,t)=>e.score>t.score?-1:e.score<t.score?1:0),t.length>5&&(t.length=5),localStorage.setItem("highscore",JSON.stringify(t))}}export{e as a};

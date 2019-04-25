@@ -3,10 +3,8 @@ import { Component } from '@stencil/core';
 
 @Component({
     tag: 'sn-app',
-    styleUrl: 'sn-app.css'
 })
 export class SnApp {
-
   render() {
     return (
       <stencil-router>

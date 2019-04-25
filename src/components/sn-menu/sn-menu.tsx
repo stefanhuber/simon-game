@@ -1,33 +1,22 @@
 import { Component } from '@stencil/core';
 
 @Component({
-    tag: 'sn-menu'
+    tag: 'sn-menu',
+    styleUrl: 'sn-menu.css'
 })
 export class SimonMenu {
 
   render() {
     return (
-      <div>
-        <header>
-            <h1>Simon Game</h1>
-        </header>
-
         <main>
-
+          <h1>Simon Game</h1>
           <div class="menu-item">  
-              <stencil-route-link url="/game">
-                  <button>Start game</button>
-              </stencil-route-link>
+              <stencil-route-link url="/game">Start game</stencil-route-link>
           </div>
-
           <div class="menu-item">  
-              <stencil-route-link url="/highscore">
-                  <button>Highscores</button>
-              </stencil-route-link>
+              <stencil-route-link url="/highscore">Highscores</stencil-route-link>
           </div>
-
         </main>
-      </div>
     );
   }
 }

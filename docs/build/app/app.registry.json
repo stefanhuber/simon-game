@@ -3,35 +3,53 @@
   "fsNamespace": "app",
   "loader": "../app.js",
   "global": "app.global.js",
-  "core": "app.core.js",
-  "corePolyfilled": "es5-build-disabled.js",
+  "core": "app.bwiwakmr.js",
+  "corePolyfilled": "app.fpqtxcuv.js",
   "components": {
     "sn-app": {
-      "$": "sn-app"
+      "bundleIds": {
+        "$": "cmmqhsks"
+      }
     },
     "sn-game": {
-      "$": "sn-game"
+      "bundleIds": {
+        "$": "fwp0yhlk"
+      }
     },
     "sn-gameboard": {
-      "$": "sn-game"
+      "bundleIds": {
+        "$": "fwp0yhlk"
+      }
     },
     "sn-gameover": {
-      "$": "sn-gameover"
+      "bundleIds": {
+        "$": "b3rpttrr"
+      }
     },
     "sn-highscore": {
-      "$": "sn-highscore"
+      "bundleIds": {
+        "$": "1gqqauko"
+      }
     },
     "sn-menu": {
-      "$": "sn-menu"
+      "bundleIds": {
+        "$": "jo2ahdac"
+      }
     },
     "stencil-route": {
-      "$": "sn-app"
+      "bundleIds": {
+        "$": "cmmqhsks"
+      }
     },
     "stencil-route-link": {
-      "$": "stencil-route-link"
+      "bundleIds": {
+        "$": "hyuo69l9"
+      }
     },
     "stencil-router": {
-      "$": "sn-app"
+      "bundleIds": {
+        "$": "cmmqhsks"
+      }
     }
   }
 }

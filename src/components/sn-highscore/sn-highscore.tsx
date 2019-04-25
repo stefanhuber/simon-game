@@ -10,20 +10,22 @@ export class SnHighscore {
         let highscore = Highscore.getHighscore();
         let items = [];
 
-        for (let item of highscore) {
-            items.push(<p><b>{ item.score }:</b> { (new Date(item.date)).toLocaleDateString() }</p>);
+        for (let i = 0; i < highscore.length; i++) {
+            items.push(
+                <div class="highscore-item">
+                    <u>{ highscore[i].score } steps</u> on { (new Date(highscore[i].date)).toLocaleDateString() }
+                </div>
+            );
         }
 
         return (
-            <div>
-                <header>
-                    <h1>Highscore</h1>
-                </header>
-    
-                <main>
-                    { items }
-                </main>
-            </div>
+            <main>
+                <h1>Highscores</h1>
+                { items }
+                <div class="menu-item">  
+                    <stencil-route-link url="/">Back</stencil-route-link>
+                </div>
+            </main>
         );
     }  
 
