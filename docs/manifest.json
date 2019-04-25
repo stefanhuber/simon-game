@@ -1,7 +1,7 @@
 {
   "name": "Simon Game",
   "short_name": "Simon Game",
-  "start_url": "/simon-game/index.html",
+  "start_url": "/simon-game",
   "description": "Train your memory with Simon Game",
   "display": "standalone",
   "orientation": "portrait",
