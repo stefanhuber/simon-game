@@ -7,7 +7,7 @@ import { Component } from '@stencil/core';
 export class SnApp {
   render() {
     return (
-      <stencil-router>
+      <stencil-router root="/simon-game/">
         <stencil-route url='/' component='sn-menu' exact={true}>
         </stencil-route>  
         <stencil-route url='/game' component='sn-game'>
