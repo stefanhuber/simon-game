@@ -10,7 +10,7 @@ export const config: Config = {
       type: 'www',
       baseUrl: '/simon-game',
       dir: 'docs',
-      serviceWorker: null
+      // serviceWorker: null
     }
   ]
 };

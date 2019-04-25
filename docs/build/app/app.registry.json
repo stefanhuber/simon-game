@@ -3,8 +3,8 @@
   "fsNamespace": "app",
   "loader": "../app.js",
   "global": "app.global.js",
-  "core": "app.3rwkfyyw.js",
-  "corePolyfilled": "app.g0dafrhg.js",
+  "core": "app.9obt58rt.js",
+  "corePolyfilled": "app.4y2wv4bi.js",
   "components": {
     "sn-app": {
       "bundleIds": {
@@ -13,12 +13,12 @@
     },
     "sn-game": {
       "bundleIds": {
-        "$": "fwp0yhlk"
+        "$": "asj7w3mp"
       }
     },
     "sn-gameboard": {
       "bundleIds": {
-        "$": "fwp0yhlk"
+        "$": "asj7w3mp"
       }
     },
     "sn-gameover": {
